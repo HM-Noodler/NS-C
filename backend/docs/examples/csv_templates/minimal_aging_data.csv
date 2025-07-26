@@ -1,0 +1,4 @@
+Client ID,Client Name,Email Address,Invoice #,Invoice Date,Invoice Amount,Total Outstanding
+MIN001,Minimal Test Corp,test@minimal.com,MIN-001,2024-06-01,1000.00,1000.00
+MIN002,Basic Company,billing@basic.com,MIN-002,2024-05-15,2500.00,2500.00
+MIN003,Simple LLC,,MIN-003,2024-04-20,750.00,750.00

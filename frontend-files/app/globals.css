@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 99 2% 99%;           /* #fcfcfc - App background */
+  --foreground: 222.2 84% 4.9%;      /* #0f0f23 - Primary text */
+  --card: 0 0% 100%;                 /* #ffffff - Card backgrounds */
+  --card-foreground: 222.2 84% 4.9%; /* #0f0f23 - Card text */
+  --primary: 221.2 83.2% 53.3%;      /* #3b82f6 - Primary blue */
+  --primary-foreground: 210 40% 98%; /* #f8fafc - Primary text */
+  --secondary: 210 40% 96%;          /* #f1f5f9 - Secondary gray */
+  --secondary-foreground: 222.2 84% 4.9%; /* #0f0f23 - Secondary text */
+  --muted: 210 40% 96%;              /* #f1f5f9 - Muted backgrounds */
+  --muted-foreground: 215.4 16.3% 46.9%; /* #64748b - Muted text */
+  --accent: 210 40% 96%;             /* #f1f5f9 - Accent backgrounds */
+  --accent-foreground: 222.2 84% 4.9%; /* #0f0f23 - Accent text */
+  --destructive: 0 84.2% 60.2%;      /* #ef4444 - Error/danger */
+  --destructive-foreground: 210 40% 98%; /* #f8fafc - Error text */
+  --border: 214.3 31.8% 91.4%;       /* #e2e8f0 - Border color */
+  --input: 214.3 31.8% 91.4%;        /* #e2e8f0 - Input borders */
+  --ring: 221.2 83.2% 53.3%;         /* #3b82f6 - Focus rings */
+  --radius: 0.5rem;                  /* 8px - Base border radius */
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;      /* #0f0f23 - Dark background */
+  --foreground: 210 40% 98%;         /* #f8fafc - Light text */
+  --card: 222.2 84% 4.9%;            /* #0f0f23 - Dark card */
+  --card-foreground: 210 40% 98%;    /* #f8fafc - Light text */
+  --primary: 210 40% 98%;            /* #f8fafc - Light primary */
+  --primary-foreground: 222.2 84% 4.9%; /* #0f0f23 - Dark text */
+  --secondary: 217.2 32.6% 17.5%;    /* #1e293b - Dark secondary */
+  --secondary-foreground: 210 40% 98%; /* #f8fafc - Light text */
+  --muted: 217.2 32.6% 17.5%;       /* #1e293b - Dark muted */
+  --muted-foreground: 215 20.2% 65.1%; /* #94a3b8 - Muted text */
+  --accent: 217.2 32.6% 17.5%;      /* #1e293b - Dark accent */
+  --accent-foreground: 210 40% 98%; /* #f8fafc - Light text */
+  --border: 217.2 32.6% 17.5%;      /* #1e293b - Dark borders */
+  --input: 217.2 32.6% 17.5%;       /* #1e293b - Dark input */
+  --ring: 212.7 26.8% 83.9%;        /* #d1d5db - Light ring */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-poppins), system-ui, sans-serif;
+    background-color: #fcfcfc;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,7 @@
+Client ID,Client Name,Email Address,Invoice #,Invoice Date,Invoice Amount,Total Outstanding,Current (0-30),31-60 Days,61-90 Days,91-120 Days,120+ Days
+,Missing Client ID,error@test.com,ERR-001,2024-06-01,1000.00,1000.00,0.00,0.00,1000.00,0.00,0.00
+ERR002,Missing Invoice Number,error@test.com,,2024-06-01,1000.00,1000.00,0.00,0.00,1000.00,0.00,0.00
+ERR003,Invalid Date,error@test.com,ERR-003,not-a-date,1000.00,1000.00,0.00,0.00,1000.00,0.00,0.00
+ERR004,Invalid Amount,error@test.com,ERR-004,2024-06-01,not-a-number,1000.00,0.00,0.00,1000.00,0.00,0.00
+ERR005,Invalid Email,invalid-email-format,ERR-005,2024-06-01,1000.00,1000.00,0.00,0.00,1000.00,0.00,0.00
+ERR006,Negative Amount,error@test.com,ERR-006,2024-06-01,-1000.00,1000.00,0.00,0.00,1000.00,0.00,0.00

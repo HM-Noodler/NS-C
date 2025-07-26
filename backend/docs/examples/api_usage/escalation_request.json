@@ -1,0 +1,75 @@
+{
+  "contact_ready_clients": [
+    {
+      "client_id": "CLIENT001",
+      "account_name": "Acme Corporation",
+      "email_address": "ap@acme.com",
+      "invoice_aging_snapshots": [
+        {
+          "invoice_number": "INV-2024-001",
+          "invoice_date": "2024-05-15",
+          "snapshot_date": "2024-12-01",
+          "days_0_30": "0.00",
+          "days_31_60": "0.00",
+          "days_61_90": "5000.00",
+          "days_91_120": "0.00",
+          "days_over_120": "0.00"
+        },
+        {
+          "invoice_number": "INV-2024-002", 
+          "invoice_date": "2024-06-01",
+          "snapshot_date": "2024-12-01",
+          "days_0_30": "0.00",
+          "days_31_60": "2500.00",
+          "days_61_90": "0.00",
+          "days_91_120": "0.00",
+          "days_over_120": "0.00"
+        }
+      ],
+      "total_outstanding_across_invoices": "7500.00",
+      "dnc_status": false
+    },
+    {
+      "client_id": "CLIENT002",
+      "account_name": "TechStart LLC",
+      "email_address": "billing@techstart.com",
+      "invoice_aging_snapshots": [
+        {
+          "invoice_number": "INV-2024-003",
+          "invoice_date": "2024-04-20",
+          "snapshot_date": "2024-12-01",
+          "days_0_30": "0.00",
+          "days_31_60": "0.00",
+          "days_61_90": "0.00",
+          "days_91_120": "7500.00",
+          "days_over_120": "0.00"
+        }
+      ],
+      "total_outstanding_across_invoices": "7500.00",
+      "dnc_status": false
+    },
+    {
+      "client_id": "CLIENT003",
+      "account_name": "Global Industries",
+      "email_address": "accounts@global.com",
+      "invoice_aging_snapshots": [
+        {
+          "invoice_number": "INV-2024-004",
+          "invoice_date": "2024-07-10",
+          "snapshot_date": "2024-12-01",
+          "days_0_30": "1200.00",
+          "days_31_60": "0.00",
+          "days_61_90": "0.00",
+          "days_91_120": "0.00",
+          "days_over_120": "0.00"
+        }
+      ],
+      "total_outstanding_across_invoices": "1200.00",
+      "dnc_status": true
+    }
+  ],
+  "preview_only": false,
+  "send_emails": false,
+  "email_batch_size": 5,
+  "retry_failed_emails": true
+}
